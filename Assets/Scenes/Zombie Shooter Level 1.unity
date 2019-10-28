@@ -507,6 +507,7 @@ GameObject:
   - component: {fileID: 1400148358}
   - component: {fileID: 1400148357}
   - component: {fileID: 1400148359}
+  - component: {fileID: 1400148362}
   - component: {fileID: 1400148360}
   - component: {fileID: 1400148361}
   m_Layer: 9
@@ -632,3 +633,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1400148362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400148356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c0595d4c336784ba1a6aaa9d0a4fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1399158209}
+  speed: 5
