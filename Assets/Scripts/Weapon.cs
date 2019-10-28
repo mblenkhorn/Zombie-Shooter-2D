@@ -4,15 +4,42 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject bulletPrefab;
+    public Transform bulletSpwn;
+    public float fireTime = 0.5f;
+
+    private bool isFiring = false;
+
+    private void SetFiring()
     {
-        
+        isFiring = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Fire()
     {
-        
+        isFiring = true;
+        Instantiate(bulletPrefab, bulletSpwn.position, bulletSpwn.rotation);
+        if(GetComponent<AudioSource>() != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
+
+        Invoke("SetFiring", fireTime);
     }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            if (!isFiring)
+            {
+                Fire();
+            }
+        }
+    }
+
+
+
+
 }
