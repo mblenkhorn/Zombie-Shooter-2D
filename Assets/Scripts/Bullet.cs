@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public float moveSpeed = 100.0f;
+    public int damage = 1;
+
+
+
+    private void Start()
     {
+        GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        other.transform.SendMessage("Take Damage", damage, SendMessageOptions.DontRequireReceiver);
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnBecameInvisible()
     {
-        
+        Die();
     }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+    }
+
 }
