@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\SmoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\SmoothLookTowardsTarget2D.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\TimerEvent.cs" />
     <Compile Include="Assets\Scripts\TopDown2DCharacterController.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Reference Include="Unity.Timeline.Editor">
