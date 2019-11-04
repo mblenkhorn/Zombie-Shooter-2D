@@ -27,6 +27,12 @@ public class SmoothLookTowardsTarget2D : MonoBehaviour
     }
 
 
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+    }
+
+
 
 
 
