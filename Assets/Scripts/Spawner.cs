@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject prefabToSpawn;
+    public float adjustmentAngle = 0;
 
-    // Update is called once per frame
-    void Update()
+    public void Spawn()
     {
-        
+        Vector3 rotationinDegrees = transform.eulerAngles;
+        rotationinDegrees.z += adjustmentAngle;
+
+        Quaternion rotationInRadians = Quaternion.Euler(rotationinDegrees);
+
+        Instantiate(prefabToSpawn, transform.position, rotationInRadians);
+
     }
 }
