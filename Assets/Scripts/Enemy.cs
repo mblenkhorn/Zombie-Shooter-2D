@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         onSpawn.Invoke(player.transform);
     }
 

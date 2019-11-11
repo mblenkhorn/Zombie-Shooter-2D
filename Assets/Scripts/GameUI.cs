@@ -31,7 +31,7 @@ public class GameUI : MonoBehaviour
     private void UpdateScore(int theScore)
     {
         playerScore += theScore;
-        scoreText.text = "Score: " + playerScore.ToString();
+        scoreText.text = "SCORE: " + playerScore.ToString();
     }
 
 

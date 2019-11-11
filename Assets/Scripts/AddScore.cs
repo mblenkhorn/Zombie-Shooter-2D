@@ -9,10 +9,11 @@ public class AddScore : MonoBehaviour
 
     public int score = 10;
 
-    private void OnDestroy()
+    public void Die()
     {
         if(OnSendScore != null)
         {
+            print(score);
             OnSendScore(score);
         }
     }
