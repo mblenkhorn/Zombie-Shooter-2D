@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class AddScore : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public delegate void SendScore(int theScore);
+    public static event SendScore OnSendScore;
 
-    // Update is called once per frame
-    void Update()
+    public int score = 10;
+
+    private void OnDestroy()
     {
-        
+        if(OnSendScore != null)
+        {
+            OnSendScore(score);
+        }
     }
 }
