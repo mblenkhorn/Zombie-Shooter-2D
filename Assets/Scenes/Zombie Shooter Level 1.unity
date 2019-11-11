@@ -733,11 +733,12 @@ GameObject:
   - component: {fileID: 1399158207}
   - component: {fileID: 1399158211}
   - component: {fileID: 1399158215}
+  - component: {fileID: 1399158216}
   - component: {fileID: 1399158210}
   - component: {fileID: 1399158212}
   - component: {fileID: 1399158213}
   - component: {fileID: 1399158214}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hero
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -921,6 +922,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02407585be94681458411f66923c1392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1399158216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399158206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabb99ca4a0915847b978eb3aa4d50fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1399158215}
+        m_MethodName: SendHealthData
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1400148356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7302379651628037777, guid: 5c85be46beb96934a837f5cbf32cb862,
