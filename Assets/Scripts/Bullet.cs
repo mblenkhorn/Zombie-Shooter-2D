@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
 
 
 
-    private void Start()
+    private void OnEnable()
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);
     }
@@ -28,7 +28,7 @@ public class Bullet : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
