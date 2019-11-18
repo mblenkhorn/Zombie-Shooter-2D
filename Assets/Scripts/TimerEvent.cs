@@ -23,7 +23,7 @@ public class TimerEvent : MonoBehaviour
     }
 
 
-    private void OnTimeComplete()
+    private void OnTimerComplete()
     {
         onTimerComplete.Invoke();
     }
