@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b95df5b66cfc6479727e1e42a7969b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 0}
+  prefabToSpawn: {fileID: 1400148356}
   adjustmentAngle: 0
 --- !u!114 &594318583
 MonoBehaviour:
@@ -972,13 +972,19 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!1 &1400148356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7302379651628037777, guid: 5c85be46beb96934a837f5cbf32cb862,
+    type: 3}
+  m_PrefabInstance: {fileID: 7302379650265704213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1400148362 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9017676506450425986, guid: 5c85be46beb96934a837f5cbf32cb862,
     type: 3}
   m_PrefabInstance: {fileID: 7302379650265704213}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1400148356}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c37b81580b72d17419a00909e10ccc20, type: 3}
@@ -1332,6 +1338,16 @@ PrefabInstance:
         type: 3}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302379651628037788, guid: 5c85be46beb96934a837f5cbf32cb862,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302379651628037788, guid: 5c85be46beb96934a837f5cbf32cb862,
+        type: 3}
+      propertyPath: health
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1753945696, guid: 5c85be46beb96934a837f5cbf32cb862, type: 3}
       propertyPath: damage
