@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753945695}
   - component: {fileID: 1753945696}
+  - component: {fileID: 1753945697}
   m_Layer: 11
   m_Name: Hurt Trigger
   m_TagString: Untagged
@@ -43,8 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 090bbb2e3842f6e40a0a5d5a7715e9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 5
   resetTime: 0.25
+--- !u!58 &1753945697
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753945694}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.5}
+  serializedVersion: 2
+  m_Radius: 0.9
 --- !u!1 &7302379651628037777
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabb99ca4a0915847b978eb3aa4d50fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 20
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -274,6 +291,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7302379651628037789}
         m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9017676506450425986}
+        m_MethodName: Die
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
