@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Title Screen");
     }
 
 
