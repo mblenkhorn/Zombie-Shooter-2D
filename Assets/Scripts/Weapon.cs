@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
 
     public GameObject bulletPrefab;
     public Transform bulletSpwn;
+    public Transform bulletSpwn2;
     public float fireTime = 0.5f;
 
     private bool isFiring = false;
@@ -20,6 +21,7 @@ public class Weapon : MonoBehaviour
     {
         isFiring = true;
         Instantiate(bulletPrefab, bulletSpwn.position, bulletSpwn.rotation);
+        Instantiate(bulletPrefab, bulletSpwn2.position, bulletSpwn2.rotation);
         if(GetComponent<AudioSource>() != null)
         {
             GetComponent<AudioSource>().Play();
