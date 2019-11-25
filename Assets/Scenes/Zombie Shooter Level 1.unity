@@ -482,8 +482,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b95df5b66cfc6479727e1e42a7969b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1400148356}
-  adjustmentAngle: 0
+  prefabToSpawn: {fileID: 7302379651628037777, guid: 5c85be46beb96934a837f5cbf32cb862,
+    type: 3}
+  adjustmentAngle: 270
 --- !u!114 &594318583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,7 +523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594318581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.01, y: -1.9110684, z: -13.999784}
+  m_LocalPosition: {x: -3.01, y: -1.9110684, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1058,12 +1059,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!1 &1400148356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7302379651628037777, guid: 5c85be46beb96934a837f5cbf32cb862,
-    type: 3}
-  m_PrefabInstance: {fileID: 7302379650265704213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1478147957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,7 +1297,7 @@ MonoBehaviour:
   - Bullet
   pooledObjects:
   - {fileID: 8537049392403101667, guid: 2f4d2da64350c52409c4e8d18acb941f, type: 3}
-  poolAmounts: 14000000
+  poolAmounts: 0a000000
   tempList: []
 --- !u!4 &1953987008
 Transform:
@@ -1312,7 +1307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953987006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.016021818, y: -2.7844372, z: -4.65118}
+  m_LocalPosition: {x: -0.016021818, y: -2.7844372, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1395,6 +1390,26 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1399158209}
+    - target: {fileID: 7302379651628037790, guid: 5c85be46beb96934a837f5cbf32cb862,
+        type: 3}
+      propertyPath: adjustmentAngle
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808721749715323291, guid: 5c85be46beb96934a837f5cbf32cb862,
+        type: 3}
+      propertyPath: onSpawn.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1399158209}
+    - target: {fileID: 7808721749715323291, guid: 5c85be46beb96934a837f5cbf32cb862,
+        type: 3}
+      propertyPath: onSpawn.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1399158209}
+    - target: {fileID: 7302379651628037788, guid: 5c85be46beb96934a837f5cbf32cb862,
+        type: 3}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1753945697, guid: 5c85be46beb96934a837f5cbf32cb862, type: 3}
       propertyPath: m_Offset.y
       value: -0.021288157
