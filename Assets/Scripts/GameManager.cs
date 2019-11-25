@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Title Screen");
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 
 
 
