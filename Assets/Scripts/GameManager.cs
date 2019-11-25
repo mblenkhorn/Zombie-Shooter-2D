@@ -7,22 +7,22 @@ public class GameManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Zombie Shooter Level 1");
+        SceneManager.LoadScene("Zombie Shooter Level 1"); //loads this scene
     }
     public void EndGame()
     {
-        SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("Game Over"); //loads this scene
     }
     
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("Title Screen");
+        SceneManager.LoadScene("Title Screen"); //loads this scene
     }
 
     public void ExitGame()
     {
-        Application.Quit();
-        Debug.Log("The game has stopping functioning");
+        Application.Quit(); //exits application if the .exe is running
+        Debug.Log("The game has stopping functioning");  //comment to notify if the player has exited the game 
     }
 
 
