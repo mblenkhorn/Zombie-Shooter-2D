@@ -60,3 +60,6 @@ TagManager:
   - name: Foreground
     uniqueID: 861964277
     locked: 0
+  - name: Rock
+    uniqueID: 2867517133
+    locked: 0
