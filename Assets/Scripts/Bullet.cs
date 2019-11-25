@@ -7,12 +7,14 @@ public class Bullet : MonoBehaviour
 
     public float moveSpeed = 100.0f;
     public int damage = 1;
+    public float damageTime = 0.5f;
 
 
 
     private void OnEnable()
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * moveSpeed);
+        Invoke("Die", damageTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -30,5 +32,12 @@ public class Bullet : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    private void OnDisable()
+    {
+        CancelInvoke("Die");
+    }
+
+
 
 }

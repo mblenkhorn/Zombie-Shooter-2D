@@ -59,9 +59,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: -0.021288157}
   serializedVersion: 2
-  m_Radius: 0.9
+  m_Radius: 0.20203125
 --- !u!1 &7302379651628037777
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,10 +196,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7302379651628037791}
         m_MethodName: SetTarget
-        m_Mode: 2
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -207,10 +207,10 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7302379651628037790}
         m_MethodName: SetTarget
-        m_Mode: 2
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   smoothing: 5
-  adjustmentAngle: 0
+  adjustmentAngle: 270
 --- !u!114 &7302379651628037789
 MonoBehaviour:
   m_ObjectHideFlags: 0
