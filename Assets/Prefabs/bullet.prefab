@@ -144,3 +144,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 100
   damage: 5
+  damageTime: 0.5

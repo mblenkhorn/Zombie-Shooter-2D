@@ -1612,7 +1612,7 @@ MonoBehaviour:
   pooledObjects:
   - {fileID: 8537049392403101667, guid: 2f4d2da64350c52409c4e8d18acb941f, type: 3}
   - {fileID: 8537049392403101667, guid: 2f4d2da64350c52409c4e8d18acb941f, type: 3}
-  poolAmounts: 1400000014000000
+  poolAmounts: 2800000028000000
   tempList: []
 --- !u!4 &1953987008
 Transform:

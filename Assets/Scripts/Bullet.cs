@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
 
     public float moveSpeed = 100.0f;
     public int damage = 1;
-    public float damageTime = 1.5f;
+    public float damageTime = 0.5f;
 
 
 
