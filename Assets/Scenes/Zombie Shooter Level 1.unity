@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482a148544bcc324bbaad77200e63fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  time: 5
   repeat: 1
   onTimerComplete:
     m_PersistentCalls:
@@ -980,7 +980,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8537049392403101667, guid: 2f4d2da64350c52409c4e8d18acb941f,
     type: 3}
   bulletSpwn: {fileID: 756514114}
-  fireTime: 0.5
+  bulletSpwn2: {fileID: 997125033}
+  fireTime: 0.1
 --- !u!95 &1399158214
 Animator:
   serializedVersion: 3
@@ -1394,5 +1395,13 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1399158209}
+    - target: {fileID: 1753945697, guid: 5c85be46beb96934a837f5cbf32cb862, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.021288157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753945697, guid: 5c85be46beb96934a837f5cbf32cb862, type: 3}
+      propertyPath: m_Radius
+      value: 0.20203125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c85be46beb96934a837f5cbf32cb862, type: 3}
