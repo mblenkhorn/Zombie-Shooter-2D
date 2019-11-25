@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+        Debug.Log("The game has stopping functioning");
     }
 
 
