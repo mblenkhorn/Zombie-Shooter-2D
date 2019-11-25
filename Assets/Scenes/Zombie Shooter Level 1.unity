@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 84104647}
   m_Layer: 12
   m_Name: Arena_Border
-  m_TagString: Untagged
+  m_TagString: Foreground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
