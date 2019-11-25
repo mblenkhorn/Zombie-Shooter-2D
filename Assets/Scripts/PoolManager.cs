@@ -27,7 +27,7 @@ public class PoolManager : MonoBehaviour
         for(int i = 0; i < names.Length; i++)
         {
             List<GameObject> objList = new List<GameObject>();
-            for(int j = 0; j < poolAmounts.Length; j++)
+            for(int j = 0; j < poolAmounts[i]; j++)
             {
                 GameObject obj = (GameObject)Instantiate(pooledObjects[i]);
                 obj.SetActive(false);

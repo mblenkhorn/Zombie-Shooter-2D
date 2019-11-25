@@ -33,13 +33,13 @@ public class Weapon : MonoBehaviour
 
         }
 
-        GameObject bullet2 = PoolManager.current.GetPooledObjects("Bullet2");
-        if(bullet2 != null)
-        {
-            bullet2.transform.position = bulletSpwn2.position;
-            bullet2.transform.rotation = bulletSpwn2.rotation;
-            bullet2.SetActive(true);
-        }
+        //GameObject bullet2 = PoolManager.current.GetPooledObjects("Bullet2");
+        //if(bullet2 != null)
+        //{
+        //    bullet2.transform.position = bulletSpwn2.position;
+        //    bullet2.transform.rotation = bulletSpwn2.rotation;
+        //    bullet2.SetActive(true);
+        //}
 
 
 
