@@ -982,7 +982,7 @@ MonoBehaviour:
     type: 3}
   bulletSpwn: {fileID: 756514114}
   bulletSpwn2: {fileID: 997125033}
-  fireTime: 0.1
+  fireTime: 0.3
 --- !u!95 &1399158214
 Animator:
   serializedVersion: 3
@@ -1093,7 +1093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 292, y: -154}
+  m_AnchoredPosition: {x: 148.7, y: -65.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478147959
@@ -1209,7 +1209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 161}
+  m_AnchoredPosition: {x: 156.70001, y: 249.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669258465
