@@ -21,15 +21,18 @@ public class HighScoreUI : MonoBehaviour
         int score = PlayerPrefs.GetInt("Score");
         string s = PlayerPrefs.GetString("HighScores");
 
-        if(string.IsNullOrEmpty(s))
+        //print((score));
+
+        if (string.IsNullOrEmpty(s))
         {
+            print("list empty");
             highScore = new HighScores();
             highScore.scores = new List<int>();
         }
         else
         {
             highScore = JsonUtility.FromJson<HighScores>(s);
-
+            
         }
 
         if(highScore.scores.Count < totalHighScores)
@@ -50,7 +53,7 @@ public class HighScoreUI : MonoBehaviour
         highScore.scores.Sort();
         highScore.scores.Reverse(0, totalHighScores);
 
-        highScoreText.text = "High Scores\n";
+        //highScoreText.text = ";
 
         for(int i = 0; i < totalHighScores; i++)
         {
@@ -65,10 +68,10 @@ public class HighScoreUI : MonoBehaviour
         }
 
         string scoresJSON = JsonUtility.ToJson(highScore);
-        PlayerPrefs.SetString("Highscores", scoresJSON);
-
-            
+        PlayerPrefs.SetString("HighScores", scoresJSON);
         
+
+
     }
 
     
