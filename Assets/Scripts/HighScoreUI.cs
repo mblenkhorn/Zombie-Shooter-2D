@@ -56,11 +56,11 @@ public class HighScoreUI : MonoBehaviour
         {
             if(highScore.scores[i] == score)
             {
-                highScoreText.text += "<color=#FF0000FF>" + (i + 1).ToString() + ". " + highScore.scores[i].ToString() + "</color>/n";
+                highScoreText.text += "<color=#FF0000FF>" + (i + 1).ToString() + ". " + highScore.scores[i].ToString() + "</color>\n";
             }
             else
             {
-                highScoreText.text += (i + 1).ToString() + ". " + highScore.scores[i].ToString() + "/n";
+                highScoreText.text += (i + 1).ToString() + ". " + highScore.scores[i].ToString() + "\n";
             }
         }
 
