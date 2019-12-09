@@ -8,13 +8,18 @@ public class AddScore : MonoBehaviour
     public static event SendScore OnSendScore;
 
     public int score = 10;
+    private bool scoreSent = false;
 
     public void Die()
     {
         if(OnSendScore != null)
         {
-            //print(score);
-            OnSendScore(score);
+            if (!scoreSent)
+            {
+                scoreSent = true;
+                OnSendScore(score);
+            }
+            
         }
     }
 }
