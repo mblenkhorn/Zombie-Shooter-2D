@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 7302379651628037791}
   - component: {fileID: 7302379651628037790}
   - component: {fileID: 7302379651628037789}
+  - component: {fileID: 1374487268775860146}
   - component: {fileID: 7302379651628037788}
   m_Layer: 9
   m_Name: Zombie
@@ -262,6 +263,21 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 4919660961341938185, guid: c154126372f23cb4fa3629e4a944a146,
     type: 3}
   adjustmentAngle: 0
+--- !u!114 &1374487268775860146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7302379651628037777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17814ba90db9d624da9d6fe2594017cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinSpawn: {fileID: 7422193652201623568, guid: ac52e221c0a48b54ca13fc21e56f225d,
+    type: 3}
+  adjustmentAngle: 0
 --- !u!114 &7302379651628037788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +318,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 9017676506450425986}
         m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1374487268775860146}
+        m_MethodName: CoinSpawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
