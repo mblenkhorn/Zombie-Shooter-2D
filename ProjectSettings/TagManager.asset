@@ -21,7 +21,7 @@ TagManager:
   - 'Enemy Damage '
   - ArenaBorder
   - Rock
-  - 
+  - Pickup
   - 
   - 
   - 
@@ -63,4 +63,7 @@ TagManager:
     locked: 0
   - name: Rock
     uniqueID: 2867517133
+    locked: 0
+  - name: Pickup
+    uniqueID: 2268993797
     locked: 0
