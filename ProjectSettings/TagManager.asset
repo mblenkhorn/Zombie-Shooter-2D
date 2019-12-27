@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Foreground
+  - Coin
   layers:
   - Default
   - TransparentFX
