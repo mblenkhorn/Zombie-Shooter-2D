@@ -13,6 +13,7 @@ public class SpawnPickup : MonoBehaviour
     {
         
         Instantiate(coinSpawn, transform.position, transform.rotation);
+        
 
     }
 }
