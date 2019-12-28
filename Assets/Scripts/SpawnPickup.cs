@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnPickup : MonoBehaviour
 {
-    public GameObject coinSpawn;
+    public GameObject coinSpawn; //this is the coin object 
 
 
     private void Start()
@@ -15,7 +15,7 @@ public class SpawnPickup : MonoBehaviour
     public void CoinSpawn()
     {
         
-        Instantiate(coinSpawn, transform.position, transform.rotation);
+        Instantiate(coinSpawn, transform.position, Quaternion.identity); //spawns a coin without rotation
         
     }
 
