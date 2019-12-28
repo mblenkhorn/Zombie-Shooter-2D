@@ -179,7 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37b81580b72d17419a00909e10ccc20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 10
+  score: 100
+  isCollected: 0
 --- !u!114 &7808721749715323291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,8 +278,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinSpawn: {fileID: 7422193652201623568, guid: ac52e221c0a48b54ca13fc21e56f225d,
     type: 3}
-  spawner: {fileID: 0}
-  Timer: 0
 --- !u!114 &7302379651628037788
 MonoBehaviour:
   m_ObjectHideFlags: 0
