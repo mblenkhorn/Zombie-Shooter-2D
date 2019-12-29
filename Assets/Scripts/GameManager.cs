@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    
+
     public void StartGame()
     {
         SceneManager.LoadScene("Zombie Shooter Level 1"); //loads this scene
@@ -24,6 +26,9 @@ public class GameManager : MonoBehaviour
         Application.Quit(); //exits application if the .exe is running
         Debug.Log("The game has stopping functioning");  //comment to notify if the player has exited the game 
     }
+
+    
+
 
 
 
