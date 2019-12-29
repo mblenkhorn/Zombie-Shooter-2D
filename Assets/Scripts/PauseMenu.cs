@@ -20,21 +20,28 @@ public class PauseMenu : MonoBehaviour
     public void GamePaused()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
         isPaused = true;
     }
 
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        Time.timeScale = 1;
         isPaused = false;
 
     }
 
     public void BackToTitleScreen()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Title Screen");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game has stopped working");
     }
     
 }
