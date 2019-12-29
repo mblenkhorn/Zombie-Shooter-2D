@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public GameObject titleScreen;
     public GameObject ControlsScreen;
     public GameObject HowToPlayScreen;
+    public GameObject QuitPrompt;
 
     public bool isControls = false;
     public bool isHowToPlay = false;
@@ -19,6 +20,7 @@ public class MenuManager : MonoBehaviour
     {
         ControlsScreen = transform.GetChild(1).gameObject;
         HowToPlayScreen = transform.GetChild(2).gameObject;
+        QuitPrompt = transform.GetChild(3).gameObject;
         
     }
 
@@ -35,6 +37,13 @@ public class MenuManager : MonoBehaviour
         titleScreen.SetActive(false);
         HowToPlayScreen.SetActive(true);
         isHowToPlay = true;
+
+    }
+
+    public void ExitGamePrompt()
+    {
+        titleScreen.SetActive(false);
+        QuitPrompt.SetActive(true);
 
     }
 
