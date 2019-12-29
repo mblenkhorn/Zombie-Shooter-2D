@@ -6,7 +6,7 @@ public class SpawnHealth : MonoBehaviour
 {
     public GameObject healthRestore; //health object 
 
-    public void HealthSpawn()
+    public void Spawn()
     {
         Instantiate(healthRestore, transform.position, Quaternion.identity); //spawns health object without rotation
     }
