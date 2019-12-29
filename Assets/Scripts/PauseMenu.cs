@@ -31,5 +31,10 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
 
     }
+
+    public void BackToTitleScreen()
+    {
+        SceneManager.LoadScene("Title Screen");
+    }
     
 }
