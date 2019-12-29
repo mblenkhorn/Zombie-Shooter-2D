@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class SpawnHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject healthRestore; //health object 
+
+    public void HealthSpawn()
     {
-        
+        Instantiate(healthRestore, transform.position, Quaternion.identity); //spawns health object without rotation
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
