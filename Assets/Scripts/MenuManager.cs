@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    //public GameManager gameManager;
+    
     public GameObject titleScreen;
     public GameObject ControlsScreen;
     public GameObject HowToPlayScreen;
@@ -42,9 +42,27 @@ public class MenuManager : MonoBehaviour
 
     public void ExitGamePrompt()
     {
-        titleScreen.SetActive(false);
         QuitPrompt.SetActive(true);
 
+    }
+
+    public void BackToScreen()
+    {
+        QuitPrompt.SetActive(false);
+
+        if(isControls == true)
+        {
+            isControls = false;
+            ControlsScreen.SetActive(false);
+            titleScreen.SetActive(true);
+        }
+
+        if(isHowToPlay == true)
+        {
+            isHowToPlay = false;
+            HowToPlayScreen.SetActive(false);
+            titleScreen.SetActive(true);
+        }
     }
 
     
