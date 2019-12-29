@@ -30,5 +30,13 @@ public class MenuManager : MonoBehaviour
         
     }
 
+    public void HowToPlay()
+    {
+        titleScreen.SetActive(false);
+        HowToPlayScreen.SetActive(true);
+        isHowToPlay = true;
+
+    }
+
     
 }
