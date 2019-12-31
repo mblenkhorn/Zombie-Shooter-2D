@@ -7,11 +7,10 @@ public class MenuManager : MonoBehaviour
     
     public GameObject titleScreen;
     public GameObject ControlsScreen;
-    public GameObject HowToPlayScreen;
-    public GameObject QuitPrompt;
+    public GameObject AboutScreen;
 
     public bool isControls = false;
-    public bool isHowToPlay = false;
+    public bool isAboutScreen = false;
 
 
 
@@ -19,8 +18,7 @@ public class MenuManager : MonoBehaviour
     void Start()
     {
         ControlsScreen = transform.GetChild(1).gameObject;
-        HowToPlayScreen = transform.GetChild(2).gameObject;
-        QuitPrompt = transform.GetChild(3).gameObject;
+        AboutScreen = transform.GetChild(2).gameObject;
         
     }
 
@@ -32,23 +30,18 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void HowToPlay()
+    public void AboutPage()
     {
         titleScreen.SetActive(false);
-        HowToPlayScreen.SetActive(true);
-        isHowToPlay = true;
+        AboutScreen.SetActive(true);
+        isAboutScreen = true;
 
     }
 
-    public void ExitGamePrompt()
-    {
-        QuitPrompt.SetActive(true);
-
-    }
+    
 
     public void BackToScreen()
     {
-        QuitPrompt.SetActive(false);
 
         if(isControls == true)
         {
@@ -57,10 +50,10 @@ public class MenuManager : MonoBehaviour
             titleScreen.SetActive(true);
         }
 
-        if(isHowToPlay == true)
+        if(isAboutScreen == true)
         {
-            isHowToPlay = false;
-            HowToPlayScreen.SetActive(false);
+            isAboutScreen = false;
+            AboutScreen.SetActive(false);
             titleScreen.SetActive(true);
         }
     }
