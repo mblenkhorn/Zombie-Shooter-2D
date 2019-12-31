@@ -179,7 +179,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 100
-  isCollected: 0
 --- !u!114 &7808721749715323291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  knockBack: 10
   onDie:
     m_PersistentCalls:
       m_Calls:
