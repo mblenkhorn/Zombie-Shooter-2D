@@ -24,7 +24,7 @@ TagManager:
   - Rock
   - Pickup
   - Health
-  - 
+  - Spawner
   - 
   - 
   - 
@@ -67,4 +67,7 @@ TagManager:
     locked: 0
   - name: Pickup
     uniqueID: 2268993797
+    locked: 0
+  - name: Spawner
+    uniqueID: 1927122257
     locked: 0
