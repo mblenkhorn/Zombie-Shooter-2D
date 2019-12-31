@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu; //this is the pause menu panel
-    public static bool isPaused = false;  //checks to see if the game is paused
+    public bool isPaused = false;  //checks to see if the game is paused
 
 
     // Start is called before the first frame update
