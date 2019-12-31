@@ -19,6 +19,8 @@ public class HealthSystem : MonoBehaviour
         health -= damage; //subtracts health by the amount of damage
         onDamaged.Invoke(health); //invokes the onDamaged event 
 
+
+
         if(health < 1) //if health is less than 1
         {
             onDie.Invoke(); //invokes the onDie event 
