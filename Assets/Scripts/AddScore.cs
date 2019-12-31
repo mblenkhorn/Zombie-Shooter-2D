@@ -9,7 +9,6 @@ public class AddScore : MonoBehaviour
 
     public int score = 10;
     private bool scoreSent = false;
-    public bool isCollected = false;
 
     public void Die()
     {
