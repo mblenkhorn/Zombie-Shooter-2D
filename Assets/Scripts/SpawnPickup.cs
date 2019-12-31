@@ -9,14 +9,20 @@ public class SpawnPickup : MonoBehaviour
 
     private void Start()
     {
-        Invoke("CoinSpawn", 2f);
+        //Invoke("CoinSpawnDelay", 2f);
     }
 
-    public void CoinSpawn()
+    public void CoinSpawnDelay()
     {
         
-        Instantiate(coinSpawn, transform.position, Quaternion.identity); //spawns a coin without rotation
+        //Instantiate(coinSpawn, transform.position, Quaternion.identity); //spawns a coin without rotation
         
+    }
+
+    public void RockSpawnCoins()
+    {
+        Instantiate(coinSpawn, transform.position, Quaternion.identity); //spawns a coin without rotation
+
     }
 
    
