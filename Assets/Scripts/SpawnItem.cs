@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class SpawnItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject Item; //this is the object that will spawn
+
+
+    public void GenerateItem()
     {
-        
+        Instantiate(Item, transform.position, Quaternion.identity); //Spawns an Object with no rotations 
     }
 }
