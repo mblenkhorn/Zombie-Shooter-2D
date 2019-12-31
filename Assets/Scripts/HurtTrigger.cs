@@ -5,19 +5,19 @@ using UnityEngine;
 public class HurtTrigger : MonoBehaviour
 {
 
-    public int damage;
-    public float resetTime = 0.25f;
+    public int damage; //damage applied to the Player 
+    public float resetTime = 0.25f; //time applied to collider being enabled and disabled 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) //when an object is triggered 
     {
-        collision.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-        GetComponent<Collider2D>().enabled = false;
-        Invoke("ResetTrigger", resetTime);
+        collision.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver); //sends the takedamage message with the amount of damage which ignores errors if the method is not found
+        GetComponent<Collider2D>().enabled = false; //disables the collider2D component 
+        Invoke("ResetTrigger", resetTime); //invokes the resetTrigger to allow the collider to be used again
     }
 
-    private void ResetTrigger()
+    private void ResetTrigger() //function to reset the collider 
     {
-        GetComponent<Collider2D>().enabled = true;
+        GetComponent<Collider2D>().enabled = true; //this will reset the collider
     }
 
 

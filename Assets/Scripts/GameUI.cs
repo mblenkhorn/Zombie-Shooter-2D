@@ -1,38 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; //allows usage of the UI classes 
 
 public class GameUI : MonoBehaviour
 {
 
-    public Slider healthBar;
-    public Text scoreText;
+    public Slider healthBar; //this is the healthbar slider
+    public Text scoreText; //this is the text for the Score 
 
-    public int playerScore = 0;
+    public int playerScore = 0; //current score of the Player 
 
     private void OnEnable()
     {
-        Player.OnUpdateHealth += UpdateHealthBar;
-        AddScore.OnSendScore += UpdateScore;
+        Player.OnUpdateHealth += UpdateHealthBar; //enables the healthbar function
+        AddScore.OnSendScore += UpdateScore; //enables the score function
     }
 
     private void OnDisable()
     {
-        Player.OnUpdateHealth -= UpdateHealthBar;
-        AddScore.OnSendScore -= UpdateScore;
-        PlayerPrefs.SetInt("Score", playerScore);
+        Player.OnUpdateHealth -= UpdateHealthBar; //disables the healthbar function
+        AddScore.OnSendScore -= UpdateScore; //disables the score function
+        PlayerPrefs.SetInt("Score", playerScore); //sets the score for the High Score 
     }
 
-    private void UpdateHealthBar(int health)
+    private void UpdateHealthBar(int health) //updates the slider amount according to the health amount 
     {
-        healthBar.value = health;
+        healthBar.value = health; //sets the slider amount 
     }
 
     private void UpdateScore(int theScore)
     {
-        playerScore += theScore;
-        scoreText.text = "SCORE: " + playerScore.ToString();
+        playerScore += theScore; //adds the score amount 
+        scoreText.text = "SCORE: " + playerScore.ToString(); //sends it the text to display it 
     }
 
 

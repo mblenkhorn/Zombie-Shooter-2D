@@ -6,22 +6,21 @@ public class Weapon : MonoBehaviour
 {
 
     //public GameObject bulletPrefab;
-    public Transform bulletSpwn;
-    public Transform bulletSpwn2;
-    public float fireTime = 0.5f;
+    public Transform bulletSpwn; //position of bullet spawn
+    public Transform bulletSpwn2; //position of bullet spawn 
+    public float fireTime = 0.5f; //time in seconds between shots 
 
-    private bool isFiring = false;
+    private bool isFiring = false; //checks to see if it has fired or not 
 
     private void SetFiring()
     {
-        isFiring = false;
+        isFiring = false; //isfiring is not enabled so no bullets can fire
     }
 
     private void Fire()
     {
-        isFiring = true;
-        //Instantiate(bulletPrefab, bulletSpwn.position, bulletSpwn.rotation);
-        //Instantiate(bulletPrefab, bulletSpwn2.position, bulletSpwn2.rotation);
+        isFiring = true; //bullets are allowed to fire 
+        
 
 
         GameObject bullet = PoolManager.current.GetPooledObjects("Bullet");
@@ -44,21 +43,21 @@ public class Weapon : MonoBehaviour
 
 
 
-        if(GetComponent<AudioSource>() != null)
+        if(GetComponent<AudioSource>() != null) //checks for an audio component
         {
-            GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().Play(); //plays the audio from the component 
         }
 
-        Invoke("SetFiring", fireTime);
+        Invoke("SetFiring", fireTime); //sets an invoke timer to reset the isfiring property
     }
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)) //if the left mouse button is held down
         {
-            if (!isFiring)
+            if (!isFiring) //if isfiring is not firing 
             {
-                Fire();
+                Fire(); //run this method 
             }
         }
     }

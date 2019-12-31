@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.Events; //this will let the components to talk to each other 
 
 public class TimerEvent : MonoBehaviour
 {
-    public float time = 1;
-    public bool repeat = false;
-    public UnityEvent onTimerComplete;
+    public float time = 1; //how long to complete in seconds
+    public bool repeat = false; //checks to see if it will repeat or not 
+    public UnityEvent onTimerComplete; //this is an event for the onTimerComplete 
 
     private void Start()
     {
-        if (repeat)
+        if (repeat) //if repeat is true
         {
-            InvokeRepeating("OnTimerComplete", 0, time);
+            InvokeRepeating("OnTimerComplete", 0, time); //the timer will repeat forever
         }
-        else
+        else //if repeat is false
         {
-            Invoke("OnTimerComplete", time);
+            Invoke("OnTimerComplete", time); //the timer runs once 
         }
 
     }
@@ -25,7 +25,7 @@ public class TimerEvent : MonoBehaviour
 
     private void OnTimerComplete()
     {
-        onTimerComplete.Invoke();
+        onTimerComplete.Invoke(); //invoke method for the onTimerComplete Event 
     }
 
 
