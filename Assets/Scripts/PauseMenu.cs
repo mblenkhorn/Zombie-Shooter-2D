@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
         
     }
 
-    private void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)) //if the spacebar is pressed
         {
