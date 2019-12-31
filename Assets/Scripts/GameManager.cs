@@ -21,10 +21,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Title Screen"); //loads this scene
     }
 
-    public void LevelSelect()
-    {
-        SceneManager.LoadScene("Level Select"); //loads this scene
-    }
+    
 
     public void ExitGame()
     {
