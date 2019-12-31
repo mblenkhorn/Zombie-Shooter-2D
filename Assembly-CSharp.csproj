@@ -80,7 +80,6 @@
     <Compile Include="Assets\Scripts\SmoothFollow2D.cs" />
     <Compile Include="Assets\Scripts\SmoothLookTowardsTarget2D.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\SpawnHealth.cs" />
     <Compile Include="Assets\Scripts\SpawnItem.cs" />
     <Compile Include="Assets\Scripts\SpawnItemDelay.cs" />
     <Compile Include="Assets\Scripts\SpawnPickup.cs" />
