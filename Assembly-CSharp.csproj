@@ -81,8 +81,6 @@
     <Compile Include="Assets\Scripts\SmoothLookTowardsTarget2D.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\SpawnItem.cs" />
-    <Compile Include="Assets\Scripts\SpawnItemDelay.cs" />
-    <Compile Include="Assets\Scripts\SpawnPickup.cs" />
     <Compile Include="Assets\Scripts\TimerEvent.cs" />
     <Compile Include="Assets\Scripts\TopDown2DCharacterController.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
