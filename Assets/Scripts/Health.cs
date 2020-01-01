@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int Life;
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        collision.transform.SendMessage("RestoreHealth", Life, SendMessageOptions.DontRequireReceiver);
+        if (gameObject.CompareTag("Health"))
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
