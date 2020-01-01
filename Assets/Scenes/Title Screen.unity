@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.1064436, b: 0.1064436, a: 1}
+  m_Color: {r: 0.06239127, g: 0.0509078, b: 0.9811321, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.91370666, g: 0.9433962, b: 0.10234961, a: 1}
+  m_Color: {r: 0.9433962, g: 0.90491694, b: 0.90334636, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2681,7 +2681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.52156866, g: 1, b: 0.09803922, a: 1}
+  m_Color: {r: 0.99306023, g: 1, b: 0.06132078, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3144,7 +3144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4056604, g: 0.102151684, b: 0.08610717, a: 1}
+  m_Color: {r: 0.6698113, g: 0.12017755, b: 0.091625154, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3418,7 +3418,7 @@ GameObject:
   - component: {fileID: 2126424743}
   - component: {fileID: 2126424742}
   m_Layer: 5
-  m_Name: ZOMBIE SHOOTER
+  m_Name: Zombie Arena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
