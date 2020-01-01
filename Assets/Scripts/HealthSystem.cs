@@ -13,6 +13,7 @@ public class HealthSystem : MonoBehaviour
     public int health = 10; //health property 
     public UnityEvent onDie; //this is a Unity Event for when the component is destroyed 
     public OnDamagedEvent onDamaged; //this is a Unity event for when the component is damaged 
+    public UnityEvent OnrestoreHealth;
 
     public void TakeDamage (int damage) //handles the Zombie's health when the Zombie is damaged 
     {
@@ -25,6 +26,13 @@ public class HealthSystem : MonoBehaviour
         {
             onDie.Invoke(); //invokes the onDie event 
         } 
+    }
+
+    public void RestoreHealth(int restore)
+    {
+        health += restore;
+        OnrestoreHealth.Invoke();
+
     }
 
 
