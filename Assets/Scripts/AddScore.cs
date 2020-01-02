@@ -27,20 +27,15 @@ public class AddScore : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) //checks for collision
     {
       if(collision.gameObject.CompareTag("Player")) //if the player touches the coin
-        {
-            CollectCoin(); //run this method
 
+       {
+            CollectCoin(); //run this method
        }
    }
 
     public void CollectCoin()
     {
         Destroy(GameObject.FindWithTag("Coin")); //destroys the object with the Coin tag
-
-        if(GetComponent<AudioSource>() != null) //checks for an audiosource
-        {
-           GetComponent<AudioSource>().Play(); //plays the audiosource 
-        }
 
         Die(); //runs the die method
     }
