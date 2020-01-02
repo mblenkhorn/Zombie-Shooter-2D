@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     
     public void BackToMainMenu()
     {
+        
         SceneManager.LoadScene("Title Screen"); //loads this scene
     }
 
@@ -25,6 +26,12 @@ public class GameManager : MonoBehaviour
 
     public void ExitGame()
     {
+        if (GetComponent<AudioSource>() != null) //checks for an audiosource
+        {
+            GetComponent<AudioSource>().Play(); //plays the sound
+        }
+
+
         Application.Quit(); //exits application if the .exe is running
         Debug.Log("The game has stopping functioning");  //comment to notify if the player has exited the game 
     }

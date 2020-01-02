@@ -5,36 +5,43 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     
-    public GameObject titleScreen;
-    public GameObject ControlsScreen;
-    public GameObject AboutScreen;
+    public GameObject titleScreen; //object for the title screen
+    public GameObject ControlsScreen; //object for the controls screen
+    public GameObject AboutScreen; //object for the about screen
 
-    public bool isControls = false;
-    public bool isAboutScreen = false;
+    public bool isControls = false; //checks to see if the controls screen is clicked
+    public bool isAboutScreen = false; //checks to see if the about screen is clicked
 
 
 
-    // Start is called before the first frame update
+    //Start is called before the first frame update
     void Start()
     {
-        ControlsScreen = transform.GetChild(1).gameObject;
-        AboutScreen = transform.GetChild(2).gameObject;
+       ControlsScreen = transform.GetChild(1).gameObject; //gets the controlscreen object
+       AboutScreen = transform.GetChild(2).gameObject; //gets the aboutscreen object
         
     }
 
     public void GameControls()
     {
-        titleScreen.SetActive(false);
-        ControlsScreen.SetActive(true);
-        isControls = true;
+        if (GetComponent<AudioSource>() != null) //checks for an audiosource
+        {
+            GetComponent<AudioSource>().Play(); //plays the sound 
+        }
+
+        titleScreen.SetActive(false); //title screen goes away 
+        ControlsScreen.SetActive(true); //brings up the controls screen
+        isControls = true; //controls screen is brought up
         
     }
 
     public void AboutPage()
     {
-        titleScreen.SetActive(false);
-        AboutScreen.SetActive(true);
-        isAboutScreen = true;
+
+        titleScreen.SetActive(false); //title screen goes away
+        AboutScreen.SetActive(true); //brings up the about screen
+        isAboutScreen = true; //about screen is brought up 
+
 
     }
 
@@ -43,18 +50,28 @@ public class MenuManager : MonoBehaviour
     public void BackToScreen()
     {
 
-        if(isControls == true)
+        if(isControls == true) //if the controls screen is up
         {
-            isControls = false;
-            ControlsScreen.SetActive(false);
-            titleScreen.SetActive(true);
+            if (GetComponent<AudioSource>() != null) //checks for an audiosource
+            {
+                GetComponent<AudioSource>().Play(); //plays the sound 
+            }
+
+            isControls = false; //controls screen is disabled
+            ControlsScreen.SetActive(false); //controls screen goes away
+            titleScreen.SetActive(true); //title screen is brought up 
         }
 
-        if(isAboutScreen == true)
+        if(isAboutScreen == true) //if the controls screen is up
         {
-            isAboutScreen = false;
-            AboutScreen.SetActive(false);
-            titleScreen.SetActive(true);
+            if (GetComponent<AudioSource>() != null) //checks for an audiosource
+            {
+                GetComponent<AudioSource>().Play(); //plays the sound 
+            } 
+
+            isAboutScreen = false; //About screen is disabled
+            AboutScreen.SetActive(false); //About screen goes away
+            titleScreen.SetActive(true); //title screen is brought up 
         }
     }
 
