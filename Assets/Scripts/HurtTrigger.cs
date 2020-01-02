@@ -10,15 +10,19 @@ public class HurtTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) //when an object is triggered 
     {
+        if (collision.gameObject.CompareTag("Player")) //if the gameobject is tagged Player 
+        {
+            if(GetComponent<AudioSource>() != null) //checks for an audio source
+
+            {
+                GetComponent<AudioSource>().Play(); //if audio source is present, sound will play
+            }
+        }
+
         collision.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver); //sends the takedamage message with the amount of damage which ignores errors if the method is not found
         GetComponent<Collider2D>().enabled = false; //disables the collider2D component 
         Invoke("ResetTrigger", resetTime); //invokes the resetTrigger to allow the collider to be used again
 
-
-        if (GetComponent<AudioSource>() != null) //checks for an audio source
-        {
-            GetComponent<AudioSource>().Play(); //if audio source is present, sound will play
-        }
     }
 
     private void ResetTrigger() //function to reset the collider 
