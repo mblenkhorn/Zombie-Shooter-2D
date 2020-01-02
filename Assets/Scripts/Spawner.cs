@@ -14,6 +14,7 @@ public class Spawner : MonoBehaviour
 
         Quaternion rotationInRadians = Quaternion.Euler(rotationinDegrees); //converts the rotation into radians
 
+        
         Instantiate(prefabToSpawn, transform.position, rotationInRadians); //spawns the object into the scene 
 
     }
