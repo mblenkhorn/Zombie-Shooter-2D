@@ -154,7 +154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 103.1, y: -83.600006}
+  m_AnchoredPosition: {x: 159.5, y: -83.600006}
   m_SizeDelta: {x: 377.98, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &31480202
@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ",https://freesound.org/people/Mrthenoronha/sounds/376351/\r\n\n"
+  m_Text: "https://freesound.org/people/Mrthenoronha/sounds/376351/\r\n\n"
 --- !u!222 &31480203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1196,7 +1196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62.9, y: -114.5}
+  m_AnchoredPosition: {x: 160.3, y: -114.5}
   m_SizeDelta: {x: 377.98, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631425185
@@ -1232,7 +1232,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ",https://freesound.org/people/jgriffie919/sounds/400174/\r\n"
+  m_Text: "https://freesound.org/people/jgriffie919/sounds/400174/\r\n"
 --- !u!222 &631425186
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1356,7 +1356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121.4, y: -68.200005}
+  m_AnchoredPosition: {x: 159, y: -68.200005}
   m_SizeDelta: {x: 377.98, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &768274126
@@ -1392,7 +1392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ", https://freesound.org/people/JarredGibb/sounds/219478/\r\n"
+  m_Text: "https://freesound.org/people/JarredGibb/sounds/219478/\r\n"
 --- !u!222 &768274127
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2074,7 +2074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 146.59998, y: -163.40002}
+  m_AnchoredPosition: {x: 162.6, y: -163.40002}
   m_SizeDelta: {x: 377.98, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326094585
@@ -2110,7 +2110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ",https://freesound.org/people/leejunip/sounds/473910/\r\n\n"
+  m_Text: "https://freesound.org/people/leejunip/sounds/473910/\r\n\n"
 --- !u!222 &1326094586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2638,7 +2638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 151.7, y: -177.2}
+  m_AnchoredPosition: {x: 163.70004, y: -177.2}
   m_SizeDelta: {x: 377.98, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392201420
@@ -2674,7 +2674,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ",https://freesound.org/people/thepodcastdoctor/sounds/487543/\r\n\n"
+  m_Text: "https://freesound.org/people/thepodcastdoctor/sounds/487543/\r\n\n"
 --- !u!222 &1392201421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3864,7 +3864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 118.7, y: -130.5}
+  m_AnchoredPosition: {x: 160.8, y: -130.5}
   m_SizeDelta: {x: 377.98, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967237231
@@ -3900,7 +3900,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ",\rhttps://freesound.org/people/Davidsraba/sounds/347174/\r\n\n"
+  m_Text: "https://freesound.org/people/Davidsraba/sounds/347174/\r\n\n"
 --- !u!222 &1967237232
 CanvasRenderer:
   m_ObjectHideFlags: 0
