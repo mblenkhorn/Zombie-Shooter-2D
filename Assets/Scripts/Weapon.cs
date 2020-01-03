@@ -23,21 +23,21 @@ public class Weapon : MonoBehaviour
         
 
 
-        GameObject bullet = PoolManager.current.GetPooledObjects("Bullet");
+        GameObject bullet = PoolManager.current.GetPooledObjects("Bullet"); //gets the object from the pool manager
         if(bullet != null)
         {
-            bullet.transform.position = bulletSpwn.position; //set position
-            bullet.transform.rotation = bulletSpwn.rotation; //set rotation
+            bullet.transform.position = bulletSpwn.position; //sets position
+            bullet.transform.rotation = bulletSpwn.rotation; //sets rotation
             bullet.SetActive(true); //enables bullet 
 
         }
 
-        GameObject bullet2 = PoolManager.current.GetPooledObjects("Bullet2");
+        GameObject bullet2 = PoolManager.current.GetPooledObjects("Bullet2"); //gets the object from the pool manager
         if(bullet2 != null)
         {
-            bullet2.transform.position = bulletSpwn2.position;
-            bullet2.transform.rotation = bulletSpwn2.rotation;
-            bullet2.SetActive(true);
+            bullet2.transform.position = bulletSpwn2.position; //sets position
+            bullet2.transform.rotation = bulletSpwn2.rotation; //sets rotation
+            bullet2.SetActive(true); //enables bullet
         }
 
 
