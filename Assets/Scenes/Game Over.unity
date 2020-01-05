@@ -190,9 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'END GAME
-
-'
+  m_Text: MAIN MENU
 --- !u!222 &605153341
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -333,7 +331,7 @@ GameObject:
   - component: {fileID: 845762262}
   - component: {fileID: 845762261}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Start Again
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -548,7 +546,7 @@ GameObject:
   - component: {fileID: 1121196276}
   - component: {fileID: 1121196275}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,7 +852,7 @@ GameObject:
   - component: {fileID: 1564739013}
   - component: {fileID: 1564739012}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
