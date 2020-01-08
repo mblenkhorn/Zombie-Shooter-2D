@@ -1810,7 +1810,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2020 Knightsoft Ltd.
+  m_Text: 2020 GBALink99
 --- !u!222 &1037670436
 CanvasRenderer:
   m_ObjectHideFlags: 0
