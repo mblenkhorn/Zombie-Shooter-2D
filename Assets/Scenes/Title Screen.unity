@@ -3758,7 +3758,7 @@ GameObject:
   - component: {fileID: 2126424743}
   - component: {fileID: 2126424742}
   m_Layer: 5
-  m_Name: Zombie Arena
+  m_Name: Zombie Abolisher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3821,7 +3821,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ZOMBIE ARENA
+  m_Text: ZOMBIE ABOLISHER
 --- !u!222 &2126424743
 CanvasRenderer:
   m_ObjectHideFlags: 0
